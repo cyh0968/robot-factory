@@ -30,7 +30,6 @@ class App extends Component {
     const filteredRobots = robots.filter(robot =>
       robot.name.toLowerCase().includes(searchFiled.toLowerCase())
     )
-    console.log(filteredRobots);
     return (
       <div className='App'>
         <h1> Robot Factory </h1>
