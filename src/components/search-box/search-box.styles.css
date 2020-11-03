@@ -1,9 +1,17 @@
 .search {
     -webkit-appearance: none;
     border: none;
+    border-radius: 10px;
     outline: none;
-    padding: 10px;
-    width: 150px;
-    line-height: 30px;
     margin-bottom: 30px;
+    padding: 10px;
+    width: 300px;
+    background-color: rgba(255,255,255, 0.2);
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+::placeholder {
+    color: rgba(0,0,0,0.6);
 }

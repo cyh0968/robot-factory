@@ -3,11 +3,14 @@ import React, { Component } from 'react';
 import { CardList } from './components/card-list/card-list.component';
 import { SearchBox } from './components/search-box/search-box.component';
 
+import './App.css'
+
 class App extends Component {
   constructor() {
     super();
+
     this.state = {
-      monsters: [],
+      robots: [],
       searchFiled: ''
     }
   }
@@ -15,21 +18,24 @@ class App extends Component {
   componentDidMount() {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
-      .then(users => this.setState({ monsters: users }));
+      .then(users => this.setState({ robots: users }));
+  }
+
+  handleChange = (event) => {
+    this.setState({ searchFiled: event.target.value })
   }
 
   render() {
-    const { monsters, searchFiled } = this.state;
-    const filteredMosters = monsters.filter(monsters =>
-      monsters.name.toLowerCase().includes(searchFiled.toLowerCase())
+    const { robots, searchFiled } = this.state;
+    const filteredRobots = robots.filter(robot =>
+      robot.name.toLowerCase().includes(searchFiled.toLowerCase())
     )
+    console.log(filteredRobots);
     return (
       <div className='App'>
-        <SearchBox 
-          placeholder='search monsters'
-          handleChange={(event) => this.setState({ searchFiled: event.target.value })}
-        />
-        <CardList monsters={filteredMosters} />
+        <h1> Robot Factory </h1>
+        <SearchBox placeholder='search robot friends' handleChange={this.handleChange} />
+        <CardList robots={filteredRobots} />
       </div>
     )
   }
