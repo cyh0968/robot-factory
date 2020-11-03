@@ -12,6 +12,12 @@
     font-size: 1.5rem;
 }
 
-::placeholder {
+.search::placeholder {
     color: rgba(0,0,0,0.6);
+    transition: color 0.25s ease-out;
+}
+
+.search:hover::placeholder {
+    color: rgba(0,0,0,0);
+    transition: color 0.25s ease-out;
 }
