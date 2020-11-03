@@ -6,4 +6,8 @@ h1 {
   font-family: 'Bigelow Rules';
   font-size: 6rem;
   color: #00d4ff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
