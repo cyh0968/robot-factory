@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/robot-factory/static/css/main.9df72280.chunk.css",
+    "main.css": "/robot-factory/static/css/main.f125424d.chunk.css",
     "main.js": "/robot-factory/static/js/main.107c39d6.chunk.js",
     "main.js.map": "/robot-factory/static/js/main.107c39d6.chunk.js.map",
     "runtime-main.js": "/robot-factory/static/js/runtime-main.255617ee.js",
@@ -10,13 +10,13 @@
     "static/js/3.fce4e110.chunk.js": "/robot-factory/static/js/3.fce4e110.chunk.js",
     "static/js/3.fce4e110.chunk.js.map": "/robot-factory/static/js/3.fce4e110.chunk.js.map",
     "index.html": "/robot-factory/index.html",
-    "static/css/main.9df72280.chunk.css.map": "/robot-factory/static/css/main.9df72280.chunk.css.map",
+    "static/css/main.f125424d.chunk.css.map": "/robot-factory/static/css/main.f125424d.chunk.css.map",
     "static/js/2.45bba6e8.chunk.js.LICENSE.txt": "/robot-factory/static/js/2.45bba6e8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.255617ee.js",
     "static/js/2.45bba6e8.chunk.js",
-    "static/css/main.9df72280.chunk.css",
+    "static/css/main.f125424d.chunk.css",
     "static/js/main.107c39d6.chunk.js"
   ]
 }
